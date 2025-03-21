@@ -67,6 +67,63 @@
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
+
+
+<!-- Add this CSS in the head section -->
+<style>
+    .enquiry-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 9999;
+    }
+
+    .modal-content {
+        background: white;
+        max-width: 500px;
+        margin: 5% auto;
+        padding: 30px;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .close-modal {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .enquiry-form input,
+    .enquiry-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .enquiry-form button {
+        background: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .enquiry-form button:hover {
+        background: #0056b3;
+    }
+</style>
+
+
+
     </head>
 
     <body>
@@ -108,10 +165,12 @@
                             <a href="#location" class="nav-mb-link">Location</a>
                             <a href="#contact-us" class="nav-mb-link">Contact
                                 Us</a>
-                            <a href="https://wa.link/jrykoo"
-                                class="mb-btn-reservas w-inline-block">
-                                <div class="rob-700-11">Enquiry Now</div>
-                            </a>
+                          
+
+                                <button class="btn-reservas">Enquiry Now</button>
+
+                          
+                            
                         </div>
                     </div>
                 </div>
@@ -172,7 +231,7 @@
                                     data-w-id="d5586f80-7fc6-5fd9-5c83-5260fd9591c9"
                                     class="btn-reservas">
                                     <div class="rob-700-12"><a
-                                            href="https://wa.link/jrykoo"
+                                            href=""
                                             target="_blank">Enquiry Now</a>
                                     </div>
                                 </div>
@@ -1574,6 +1633,15 @@
                                             apply.</p>
                                     </div>
                                 </div>
+                           
+                           
+                            
+
+
+
+                           
+                           
+                           
                                 <div class="footer-wrap">
                                     <div class="row justify-content-between">
                                         <div class="col-md-9">
@@ -2077,6 +2145,77 @@
         <script>
         new WOW().init();
     </script>
-    </body>
+
+<div class="enquiry-modal" id="enquiryModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3 style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Enquiry Form</h3>
+        <form class="enquiry-form" id="enquiryForm" style="max-width: 500px; margin: 0 auto; padding: 20px; background-color: white; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="fullname" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Full Name:</label>
+                <input type="text" name="fullname" id="fullname" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; color: #333;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Email:</label>
+                <input type="email" name="email" id="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; color: #333;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="phone" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Contact Number:</label>
+                <input type="tel" name="phone" id="phone" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; color: #333;">
+            </div>
+            
+            <button type="submit" style="background-color: #010509; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px;">Submit</button>
+        </form>
+        
+    </div>
+</div>
+
+
+<script>
+    // Show modal
+    document.querySelectorAll('.btn-reservas, .mb-btn-reservas').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('enquiryModal').style.display = 'block';
+        });
+    });
+
+    // Close modal
+    document.querySelector('.close-modal').addEventListener('click', () => {
+        document.getElementById('enquiryModal').style.display = 'none';
+    });
+
+    // Close when clicking outside modal
+    window.onclick = function(event) {
+        const modal = document.getElementById('enquiryModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+
+    // Handle form submission
+    document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = {
+            name: this.fullname.value,
+            email: this.email.value,
+            phone: this.phone.value,
+            message: this.message.value
+        };
+
+        // Here you can add your submission logic (e.g., sending data to a server)
+        console.log('Form submitted:', formData);
+        
+        // Reset form and close modal
+        this.reset();
+        document.getElementById('enquiryModal').style.display = 'none';
+        alert('Thank you for your enquiry! We will contact you soon.');
+    });
+</script>
+</body>
 
 </html>
