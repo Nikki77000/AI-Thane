@@ -1,0 +1,412 @@
+@media (min-width: 992px) {
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="845934d2-90ea-636c-e0d8-eb4ab392702c"] {
+    width: 0%;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="9866b879-fdd9-d015-811b-c4079d2425b4"] {
+    width: 0%;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="0d6d2b64-825d-4d53-a6cb-b79a3ab1d316"] {
+    display: none;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="a558a314-09e4-1058-a6ee-debf3e8cef70"] {
+    color: rgb(134, 32, 65);
+    opacity: 0;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="d3582594-7927-ba74-2527-4fecfec546e7"] {
+    display: block;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="bfe5908d-6d05-4ff1-43d3-9e0a6d553247"] {
+    opacity: 0;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="86fbd0e3-e785-3191-6ac1-7ceb3e532f03"] {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0deg) skew(0, 0);
+    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    background-color: rgb(134, 32, 65);
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="7c886e90-b498-bf76-3c0b-299944fe977c"] {
+    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0deg) skew(0, 0);
+    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0deg) skew(0, 0);
+    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    background-color: rgb(134, 32, 65);
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="e6612957-a1a5-feb8-55ec-153ee25e8555"] {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 480px) {
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="0d6d2b64-825d-4d53-a6cb-b79a3ab1d316"] {
+    display: none;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="a558a314-09e4-1058-a6ee-debf3e8cef70"] {
+    color: rgb(134, 32, 65);
+    opacity: 0;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="d3582594-7927-ba74-2527-4fecfec546e7"] {
+    display: block;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="bfe5908d-6d05-4ff1-43d3-9e0a6d553247"] {
+    opacity: 0;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="86fbd0e3-e785-3191-6ac1-7ceb3e532f03"] {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0deg) skew(0, 0);
+    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    background-color: rgb(134, 32, 65);
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="7c886e90-b498-bf76-3c0b-299944fe977c"] {
+    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0deg) skew(0, 0);
+    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0deg) skew(0, 0);
+    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    background-color: rgb(134, 32, 65);
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="e6612957-a1a5-feb8-55ec-153ee25e8555"] {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 479px) {
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="0d6d2b64-825d-4d53-a6cb-b79a3ab1d316"] {
+    display: none;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="a558a314-09e4-1058-a6ee-debf3e8cef70"] {
+    color: rgb(134, 32, 65);
+    opacity: 0;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="d3582594-7927-ba74-2527-4fecfec546e7"] {
+    display: block;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="bfe5908d-6d05-4ff1-43d3-9e0a6d553247"] {
+    opacity: 0;
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="86fbd0e3-e785-3191-6ac1-7ceb3e532f03"] {
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0deg) skew(0, 0);
+    -moz-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    -ms-transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    background-color: rgb(134, 32, 65);
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="7c886e90-b498-bf76-3c0b-299944fe977c"] {
+    -webkit-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0deg) skew(0, 0);
+    -moz-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0)
+      rotateY(0) rotateZ(0deg) skew(0, 0);
+    -ms-transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    transform: translate3d(0px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0)
+      rotateZ(0deg) skew(0, 0);
+    background-color: rgb(134, 32, 65);
+  }
+
+  html.w-mod-js:not(.w-mod-ix)
+    [data-w-id="e6612957-a1a5-feb8-55ec-153ee25e8555"] {
+    opacity: 1;
+  }
+}
+
+body .transition {
+  display: block;
+}
+
+.w-editor .transition {
+  display: none;
+}
+
+.no-scroll-transition {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Change Text Selection Color */
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+/* Form Auto Preenchimento */
+
+/* Change the white to any color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px black inset !important;
+}
+
+/* Change text in autofill textbox*/
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+.trasition {
+  display: block;
+}
+
+[aria-disabled="true"] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.nav-link.w--current .nav-ball {
+  transform: scale(1);
+}
+
+.nav-mb-link.w--current {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 992px) {
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+
+*[tabindex]:focus-visible,
+input[type="file"]:focus-visible {
+  outline: 0.125rem solid #4d65ff;
+  outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+
+.w-richtext > :not(div):first-child,
+.w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+
+.w-richtext > :last-child,
+.w-richtext ol li:last-child,
+.w-richtext ul li:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+
+.pointer-events-off {
+  pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+
+.div-square::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+
+.container-medium,
+.container-small,
+.container-large {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+color: inherit;
+text-decoration: inherit;
+font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+
+.text-style-3lines {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+
+.text-style-2lines {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+  .hide,
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hide-mobile-landscape {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+/*Reset buttons, and links styles*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+
+/* Max Font Size */
+
+@media screen and (min-width: 1920px) {
+  body {
+    font-size: 21.333333333333332px;
+  }
+}
+
+/* Min-width PC*/
+
+@media only screen and (max-width: 1919px) and (min-width: 992px) {
+  body {
+    font-size: 1.1111111111111112vw;
+  }
+}
+
+/* Min Max Width - Tablets */
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  body {
+    font-size: 1.6161616161616161vw;
+  }
+}
+
+/* Max Width - Mobile Landscape */
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  body {
+    font-size: 3.1vw;
+  }
+}
+
+/* Max Width - Mobile Protait font-size: 3.45vw;*/
+
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 4.1vw;
+  }
+}
+
+/* Container Max Width */
+
+.container {
+  max-width: 1440px;
+}

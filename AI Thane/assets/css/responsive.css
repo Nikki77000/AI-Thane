@@ -1,0 +1,43 @@
+/* max-width: 600px */
+@media only screen and (max-width: 600px) {
+  .priload-img a img {
+    width: 150px;
+  }
+
+  .hero-component {
+    height: 60vh;
+  }
+
+  .nav-logo-wrap {
+    color: #d1ab66;
+    justify-content: center;
+    width: 150px !important;
+    display: flex;
+    top: 30px !important;
+  }
+
+  .nav-logo {
+    bottom: 0;
+  }
+
+  .nav-mobile-open {
+    width: 100%;
+  }
+
+  .footer-wrap {
+    text-align: center;
+  }
+
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-5 {
+    padding-top: 20px;
+  }
+
+  .maharera-section {
+    padding: 0;
+  }
+}

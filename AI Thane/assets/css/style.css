@@ -1,0 +1,391 @@
+@font-face {
+  font-family: "MonotoonKK";
+  src: url("../font/Monotoon-KK-Regular.woff2") format("woff2"),
+    url("../font/Monotoon-KK-Regular.woff") format("woff"),
+    url("../font/Monotoon-KK-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.about-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/about-us-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 100px 0px;
+  margin-top: 80px;
+}
+
+.title-header {
+  font-family: "MonotoonKK", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: #d1ab66;
+}
+
+.italic-font p {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.counter .counter-section {
+  padding: 20px 0;
+}
+
+.counter .counter-section h2,
+.counter .counter-section p {
+  text-align: justify;
+  -moz-text-align-last: right;
+  text-align-last: right;
+}
+
+/* Location Page Start */
+.location .text-area {
+  padding: 50px 25px;
+}
+
+.location .section-1 .text-area .net-right-bottom {
+  content: url("../images/golden-net.png");
+  right: 30px;
+  width: 150px;
+  position: fixed;
+}
+
+.location .section-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/section-2-bg.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.location .section-2 .img-text-area {
+  padding: 0px 0px 80px 0px;
+}
+
+.location .section-2 .img-text-area img {
+  width: 25%;
+  margin-bottom: 50px;
+}
+
+.text-box {
+  padding: 30px;
+  background: #000000a2;
+  margin: 0;
+}
+
+.padding-section {
+  padding: 80px 0;
+}
+
+.padding-t-50 {
+  padding-top: 50px;
+}
+
+.gtc h4 {
+  text-align: center;
+  font-style: italic;
+  margin: 15px 0px 5px 0px;
+}
+
+.gtc-card .italic-font p {
+  text-align: center;
+}
+
+.art-amenities {
+  padding: 20px 0px;
+}
+
+.LIFETIME-view {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/LIFETIME-view-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.LIFETIME-view img {
+  opacity: 0.4;
+}
+
+.Boutique-office-spaces {
+  background: linear-gradient(#000, #000000d5, #00000000),
+    url("../images/Boutique-office-spaces.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.LIFETIME-view .row-2 {
+  margin-top: 80px;
+}
+
+.LIFETIME-view .row-1 {
+  margin-bottom: 80px;
+}
+
+.Boutique-office-spaces .text-space {
+  padding: 80px 0px 125px 0px;
+}
+
+.Boutique-office-spaces .img-space {
+  padding: 0px 0px 125px 0px;
+}
+
+.contactos-info-text form input,
+.contactos-info-text form textarea {
+  margin-bottom: 7px;
+  padding: 5px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+}
+
+.contactos-info-text form button {
+  padding: 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  transition: 0.7s;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #000;
+}
+
+.contactos-info-text form button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+/* social */
+
+.social-icons a {
+  color: #fff;
+  line-height: 30px;
+  font-size: 30px;
+  margin: 0 8px;
+  text-decoration: none;
+  display: inline;
+}
+
+.social-icons a i {
+  line-height: 30px;
+  font-size: 30px;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+}
+
+.social-icons a:hover i {
+  box-shadow: 0px 0px 150px #000000;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);
+}
+
+.italic-font li {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.italic-font {
+  font-style: italic;
+}
+
+.body-clr01 {
+  color: #d1ab66;
+}
+
+.location tr td {
+  font-style: italic;
+  margin-bottom: 10px !important;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.maharera-section {
+  padding: 60px 0 30px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.maharera-section p a {
+  transition: 0.5s;
+}
+
+.maharera-section p a:hover {
+  background-color: yellow;
+  border-bottom: 1px solid blue;
+  color: blue;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper .overly {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+
+.wrapper .overly .show {
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.wrapper .overly .show .close {
+  position: absolute;
+  font-size: 25px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.wrapper .overly .show img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .container {
+  width: 800px;
+  height: 200px;
+  margin: 10px 10px;
+}
+
+.wrapper .container img {
+  width: 350px;
+  display: inline-block;
+  object-fit: cover;
+  border: 1px solid #b9b5b5;
+  cursor: pointer;
+}
