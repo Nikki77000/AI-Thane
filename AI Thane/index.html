@@ -7,7 +7,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>Saptashree AI Thane</title>
+        <title>AI Thane</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="Webflow" name="generator" />
         <meta name="description"
@@ -120,6 +120,32 @@
     .enquiry-form button:hover {
         background: #0056b3;
     }
+    
+    /* Ensure the button is visible on mobile */
+    .btn-reservas {
+            display: block; /* Make sure it's not hidden */
+            width: 100%; /* Full width for better tap targets */
+            padding: 10px 20px; /* Add padding for better touch experience */
+            text-align: center; /* Center the text */
+            background-color: #d1ab66; /* Example background color */
+            color: #000000; /* Example text color */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 10px; /* Add spacing if needed */
+        }
+
+        /* Hide the desktop-specific button on mobile */
+        @media (max-width: 767px) {
+            .nav-right .btn-reservas {
+                display: none; /* Hide desktop button */
+            }
+
+            .nav-mb-wrap .btn-reservas {
+                display: block; /* Show mobile button */
+                margin-top: 20px; /* Add spacing */
+            }
+        }
 </style>
 
 
@@ -239,11 +265,11 @@
                                         src="https://cdn.prod.website-files.com/643e9308ca6b20b70e451131/643ea3b0343daab58d370906_Localizacao.svg"
                                         loading="lazy" alt
                                         class="localizacao-img" />
-                                    <a href="https://saptashree.com/"
+                                    <a href="https://wa.link/jrykoo"
                                         target="_blank"
                                         class="localizacao-text-mapa w-inline-block">
                                         <div
-                                            class="rob-700-13 lh-16">www.saptashree.com</div>
+                                            class="rob-700-13 lh-16">+91 9152528787</div>
                                     </a>
                                 </div>
                             </div>
@@ -260,7 +286,7 @@
                         class="transition-text-wrap">
                         <div class="priload-img">
                             <a href="https://saptashree.com/" target="_blank">
-                                <img src="assets/images/logo-1.png" alt>
+                                <img src="assets/images/index-logo.png" alt>
                             </a>
                         </div>
                         <div class="transition-text">AI THANE</div>
@@ -292,6 +318,134 @@
                                     sizes="(max-width: 479px) 89vw, (max-width: 767px) 93vw, (max-width: 991px) 91vw, 94vw"
                                     zoom="1" loading="lazy" />
                             </div>
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <!-- Add this before the image -->
+<!-- Enquiry Now Button (Mobile Only) -->
+<div class="mobile-enquiry-button">
+    <button class="btn-reservas" onclick="openEnquiryModal()">Enquiry Now</button>
+</div>
+
+<!-- Enquiry Form Modal -->
+<div class="enquiry-modal" id="enquiryModal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeEnquiryModal()">&times;</span>
+        <h3>Enquiry Form</h3>
+        <form class="enquiry-form" id="enquiryForm" action="submit-form.php" method="POST">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone" required>
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    function openEnquiryModal() {
+        document.getElementById('enquiryModal').style.display = 'block';
+    }
+
+    function closeEnquiryModal() {
+        document.getElementById('enquiryModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+        const modal = document.getElementById('enquiryModal');
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+
+<!-- CSS -->
+<style>
+    /* Ensure the modal is centered and responsive */
+    .enquiry-modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position to stay in place */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        z-index: 1000; /* Ensure it's above other content */
+        overflow: auto; /* Allow scrolling if the content is too tall */
+    }
+
+    .modal-content {
+        background: white;
+        max-width: 500px; /* Limit the width of the modal */
+        width: 90%; /* Responsive width */
+        padding: 30px;
+        border-radius: 5px;
+        position: absolute; /* Absolute positioning within the modal */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for exact center */
+        z-index: 1001; /* Ensure it's above the overlay */
+    }
+
+    /* Close button styling */
+    .close-modal {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    /* Form styling */
+    .enquiry-form input,
+    .enquiry-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .enquiry-form button {
+        background: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .enquiry-form button:hover {
+        background: #0056b3;
+    }
+
+    /* Hide the button by default */
+    .mobile-enquiry-button {
+        display: none;
+    }
+
+    /* Show the button only on mobile devices */
+    @media (max-width: 767px) {
+        .mobile-enquiry-button {
+            display: block; /* Show the button */
+            text-align: center; /* Center the button */
+            margin-top: 20px; /* Add spacing above the button */
+        }
+
+        .mobile-enquiry-button .btn-reservas {
+            width: 100%; /* Full width */
+            padding: 10px 20px; /* Add padding */
+            background-color: #007bff; /* Button color */
+            color: white; /* Text color */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+</style>
                         </div>
                     </div>
                 </section>
@@ -1529,8 +1683,13 @@
                                                 <a href="tel:91 5252 8787"
                                                     class="rob-300-18  link"><i
                                                         class="fa fa-phone"></i>
-                                                    &nbsp;+91 81081 07546 <br>+91 81081 07554<br>
+                                                    &nbsp;+91 81081 07546 
                                                 </a>
+                                                <a href="tel:91 5252 8787"
+                                                class="rob-300-18  link"><i
+                                                    class="fa fa-phone"></i>
+                                                &nbsp;+91 81081 07554
+                                            </a>
                                             </div>
                                            <!-- <div class><i
                                                     class="fa fa-envelope"></i>
@@ -1675,7 +1834,7 @@
                                                             aria-hidden="true"></i>
                                                     </a> -->
                                                     <a
-                                                        href="https://www.facebook.com/saptashreedevelopers"
+                                                        href="https://www.facebook.com/profile.php?id=61573986365213&sk=about"
                                                         target="_blank"
                                                         title="facebook">
                                                         <i
@@ -1683,7 +1842,7 @@
                                                             aria-hidden="true"></i>
                                                     </a>
                                                     <a
-                                                        href="http://linkedin.com/company/saptashree"
+                                                        href="https://www.linkedin.com/company/ai-thane/"
                                                         target="_blank"
                                                         title="linkedin">
                                                         <i
@@ -1691,7 +1850,7 @@
                                                             aria-hidden="true"></i>
                                                     </a>
                                                     <a
-                                                        href="https://www.instagram.com/saptashreebuilders"
+                                                        href="https://www.instagram.com/ai_thane_gtc/"
                                                         target="_blank"
                                                         title="instagram">
                                                         <i
@@ -1699,12 +1858,12 @@
                                                             aria-hidden="true"></i>
                                                     </a>
                                                     <a
-                                                        href="https://www.youtube.com/@SaptashreeBuildersDevelopers"
+                                                        href="https://x.com/AiThane95825"
                                                         target="_blank"
-                                                        title="youtube">
-                                                        <i
-                                                            class="fa fa-youtube-square"
-                                                            aria-hidden="true"></i>
+                                                        title="Twitter">
+                                                        
+                                                           <i class="fa-brands fa-x-twitter"aria-hidden="true"></i>
+                                                            
                                                     </a>
                                                 </div>
                                             </div>
@@ -2163,7 +2322,7 @@
     <div class="modal-content">
         <span class="close-modal" style="font-size: 30px; cursor: pointer; color: #333; position: absolute; top: 10px; right: 20px;">&times;</span>
         <h3 style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Enquiry Form</h3>
-        <form class="enquiry-form" id="enquiryForm" style="max-width: 500px; margin: 0 auto; padding: 20px; background-color: white; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+        <form class="enquiry-form" id="enquiryForm" action="submit-form.php" method="POST" style="max-width: 500px; margin: 0 auto; padding: 20px; background-color: white; border-radius: 5px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
             <div class="form-group" style="margin-bottom: 15px;">
                 <label for="fullname" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Full Name:</label>
                 <input type="text" name="fullname" id="fullname" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; color: #333;">
@@ -2187,49 +2346,113 @@
     </div>
 </div>
 
-
 <script>
-    // Show modal
-    document.querySelectorAll('.btn-reservas, .mb-btn-reservas').forEach(button => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            document.getElementById('enquiryModal').style.display = 'block';
-        });
-    });
+    document.getElementById("enquiryForm").addEventListener("submit", function (event) {
+    let isValid = true;
 
-    // Close modal
-    document.querySelector('.close-modal').addEventListener('click', () => {
-        document.getElementById('enquiryModal').style.display = 'none';
-    });
-
-    // Close when clicking outside modal
-    window.onclick = function(event) {
-        const modal = document.getElementById('enquiryModal');
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
+    // Validate Full Name
+    const fullname = document.getElementById("fullname").value;
+    if (!fullname) {
+        document.getElementById("fullnameError").style.display = "block";
+        isValid = false;
+    } else {
+        document.getElementById("fullnameError").style.display = "none";
     }
 
-    // Handle form submission
-    document.getElementById('enquiryForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = {
-            name: this.fullname.value,
-            email: this.email.value,
-            phone: this.phone.value,
-            message: this.message.value
-        };
+    // Validate Email
+    const email = document.getElementById("email").value;
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById("emailError").style.display = "block";
+        isValid = false;
+    } else {
+        document.getElementById("emailError").style.display = "none";
+    }
 
-        // Here you can add your submission logic (e.g., sending data to a server)
-        console.log('Form submitted:', formData);
-        
-        // Reset form and close modal
+    // Validate Phone
+    const phone = document.getElementById("phone").value;
+    if (!phone || !/^\d{10}$/.test(phone)) {
+        document.getElementById("phoneError").style.display = "block";
+        isValid = false;
+    } else {
+        document.getElementById("phoneError").style.display = "none";
+    }
+
+    if (!isValid) {
+        event.preventDefault(); // Prevent form submission if validation fails
+    }
+});
+</script>
+<script>
+    // Show modal
+document.querySelectorAll('.btn-reservas, .mb-btn-reservas').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById('enquiryModal').style.display = 'block';
+    });
+});
+
+// Close modal
+document.querySelector('.close-modal').addEventListener('click', () => {
+    document.getElementById('enquiryModal').style.display = 'none';
+});
+
+// Close when clicking outside modal
+window.onclick = function(event) {
+    const modal = document.getElementById('enquiryModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// Handle form submission
+document.getElementById("enquiryForm").addEventListener("submit", function (event) {
+    let isValid = true;
+
+    // Validate Full Name
+    const fullname = document.getElementById("fullname").value;
+    if (!fullname) {
+        document.getElementById("fullnameError").style.display = "block";
+        isValid = false;
+    } else {
+        document.getElementById("fullnameError").style.display = "none";
+    }
+
+    // Validate Email
+    const email = document.getElementById("email").value;
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById("emailError").style.display = "block";
+        isValid = false;
+    } else {
+        document.getElementById("emailError").style.display = "none";
+    }
+
+    // Validate Phone
+    const phone = document.getElementById("phone").value;
+    if (!phone || !/^\d{10}$/.test(phone)) {
+        document.getElementById("phoneError").style.display = "block";
+        isValid = false;
+    } else {
+        document.getElementById("phoneError").style.display = "none";
+    }
+
+    // Prevent form submission if validation fails
+    if (!isValid) {
+        event.preventDefault();
+    } else {
+        // If validation passes, allow the form to submit to the server
+        console.log('Form submitted:', {
+            fullname: this.fullname.value,
+            email: this.email.value,
+            phone: this.phone.value
+        });
+
+        // Optionally, reset the form and close the modal
         this.reset();
         document.getElementById('enquiryModal').style.display = 'none';
         alert('Thank you for your enquiry! We will contact you soon.');
-    });
+    }
+});
+
 </script>
 </body>
 
